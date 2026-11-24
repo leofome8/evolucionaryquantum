@@ -1,0 +1,19 @@
+# So o Python vem do conda; o resto vem do pip, para nao carregar dois runtimes OpenMP no Windows
+name: artigo3pip
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cpu
+      - numpy
+      - scipy
+      - pandas
+      - matplotlib
+      - networkx
+      - joblib>=1.4
+      - cma
+      - torch
+      - jupyterlab
+      - ipykernel

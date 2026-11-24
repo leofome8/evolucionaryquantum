@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+data/**/*.jsonl
+analysis/work/
+artigo3_*/
+teste_*/
